@@ -39,6 +39,10 @@ body {
   padding: 0px 70px;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: arabic-bold;
+}
+
 p, h1, h2 {
   direction: rtl;
 }
@@ -63,6 +67,11 @@ p {
 
 nav img {
   width: 100px;
+}
+nav .navbar-nav li {
+  color: #59113C;
+  font-family: arabic-bold;
+  font-size: 17px;
 }
 
 .hero-section {
@@ -198,7 +207,7 @@ nav img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px;
+  margin: 4px 0px;
 }
 .our-services-sec .redirect-sec span {
   font-size: 90px;
@@ -264,6 +273,13 @@ nav img {
   flex-wrap: wrap;
   padding: 20px;
 }
+.our-services-sec .gallery .tab-pane {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .our-services-sec .sections-cover {
   position: absolute;
   top: 57px;
@@ -294,11 +310,14 @@ nav img {
   margin-left: 0px;
 }
 .our-qoutes-sec .card {
-  border-radius: 42px;
+  width: 258px;
+  border-radius: 15px;
   overflow: hidden;
   padding: 0;
   transition: transform 0.5s, background-color 0.5s ease-in, opacity 0.1s ease-in-out;
   transform: scale(1);
+  margin: 9px;
+  box-shadow: 0 5px 10px #bababa, 0 15px 40px #ffffff;
 }
 .our-qoutes-sec .card .overlay {
   display: flex;
@@ -311,6 +330,9 @@ nav img {
   z-index: 7;
   opacity: 0;
   transition: background-color 0.5s ease-in, opacity 0.1s ease-in-out;
+}
+.our-qoutes-sec .card .overlay a {
+  text-decoration: none;
 }
 .our-qoutes-sec .card .overlay h2 {
   color: #FFF;
@@ -346,7 +368,7 @@ nav img {
 .our-qoutes-sec .card .card-body ul li {
   list-style: circle;
 }
-.our-qoutes-sec .card .card-body a {
+.our-qoutes-sec .card .card-body .qoutes-card-flag {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -354,10 +376,15 @@ nav img {
   background-color: #9FD5BE;
   color: #59113C;
   font-weight: bold;
+  margin: 0;
+  text-align: center;
+  font-size: 29px;
+  padding-bottom: 5px;
 }
 
 .who-us-sec h2 {
-  font-size: 6rem;
+  font-family: arabic-bold;
+  font-size: 75px;
   color: #59113C;
 }
 
@@ -403,6 +430,7 @@ nav img {
 .contact-us-sec .contact-info a {
   text-decoration: none;
   color: #59113C;
+  width: max-content;
 }
 
 .footer-sec {
@@ -453,8 +481,32 @@ nav img {
     flex-direction: column-reverse;
   }
 
+  .our-qoutes-sec h2 {
+    text-align: center;
+  }
+
+  .who-us-sec .row {
+    flex-direction: column-reverse;
+  }
+
   .contact-us-sec .contact-info-container {
     flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 1046px) {
+  .qoutes-container {
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav .navbar-collapse {
+    background-color: white;
+    box-shadow: 0px 0px 11px -5px;
+  }
+}
+@media screen and (max-width: 1048px) {
+  .qoutes-container a {
+    margin: 5px;
   }
 }
 @media screen and (max-width: 1519px) {

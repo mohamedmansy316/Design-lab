@@ -8,12 +8,14 @@
 body{
   font-family: arabic-regular !important;
   overflow-x: hidden;
-  
 }
 .section:not(.footer-sec){
   margin-top: 140px;
   padding: 0px 70px;
 
+}
+h1,h2,h3,h4,h5{
+  font-family:  arabic-bold;;
 }
 
 p,h1,h2{
@@ -38,6 +40,13 @@ p{
 nav {
   img{
     width: 100px;
+  }
+  .navbar-nav{
+    li{
+      color: $sec-color;
+      font-family: arabic-bold;
+      font-size: 17px;
+    }
   }
 }
 
@@ -179,7 +188,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px;
+    margin: 4px 0px;
     span{
       font-size: 90px;
       color: $third-color;
@@ -245,6 +254,13 @@ nav {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    .tab-pane {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
   .sections-cover{
     position: absolute;
@@ -276,15 +292,15 @@ nav {
     margin-top: 50px;
     margin-left: 0px;
   }
-  
   .card {
-    border-radius: 42px;
+    width: 258px;
+    border-radius: 15px;
     overflow: hidden;
     padding: 0;
     transition: transform 0.5s , background-color 0.5s ease-in, opacity 0.1s ease-in-out;
     transform: scale(1);
-
-   
+    margin: 9px;
+    box-shadow: 0 5px 10px #bababa, 0 15px 40px #ffffff;
     .overlay{
       display: flex;
       justify-content: center;
@@ -296,7 +312,9 @@ nav {
       z-index: 7;
       opacity: 0;
       transition: background-color 0.5s ease-in, opacity 0.1s ease-in-out; 
-
+      a{
+        text-decoration: none;
+      }
       h2{
         color: #FFF;
         font-size: 35px;
@@ -331,7 +349,7 @@ nav {
       ul li{
         list-style: circle;
       }
-      a{
+      .qoutes-card-flag{
         position: absolute;
         bottom: 0;
         left: 0;
@@ -339,6 +357,10 @@ nav {
         background-color: $main-color;
         color: $sec-color;
         font-weight: bold;
+        margin: 0;
+        text-align: center;
+        font-size: 29px;
+        padding-bottom: 5px;
       }
     }
   }
@@ -346,7 +368,8 @@ nav {
 
 .who-us-sec{
   h2{
-    font-size: 6rem;
+    font-family: arabic-bold;
+    font-size: 75px;
     color: $sec-color;
   }
 }
@@ -392,7 +415,7 @@ nav {
     a{
       text-decoration: none;
       color: $sec-color;
-      
+      width: max-content;
     }
   }
 }
@@ -449,9 +472,39 @@ nav {
       flex-direction: column-reverse;
     }
   }
+  .our-qoutes-sec{
+   h2{
+     text-align: center;
+   }
+}
+  .who-us-sec{
+    .row{
+      flex-direction: column-reverse;
+    }
+  }
   .contact-us-sec{
     .contact-info-container{
       flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width:1046px) {
+  .qoutes-container{
+      justify-content: center !important;
+  }
+}
+@media screen and (max-width:992px) {
+ nav{
+   .navbar-collapse {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 11px -5px;
+   }
+ }
+}
+@media screen and (max-width:1048px) {
+  .qoutes-container{
+    a{
+      margin: 5px;
     }
   }
 }

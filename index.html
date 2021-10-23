@@ -32,7 +32,7 @@
       </nav>
           <div class="row justify-content-around">
             <div class="col-lg-6 col-md-6 ">
-              <img class="sec-img" src="dist/images/hero-sec-image.gif" alt="">
+              <img class="sec-img" src="dist/images/hero-sec-image.gif" alt=""> 
             </div>
             <div class="col-lg-6 col-md-6  d-flex flex-column justify-content-center align-items-end">
               <h1 class="mb-4">أثبتت الدراسات العلمية أهمية مزاح الفنان ومزج الألوان لخلق تغذيه بصرية تلفت الأنتباة في مختبرنا نوضح رسالتك بلمسة إبداعية</h1>
@@ -51,13 +51,14 @@
         </div>
         <div class="col-lg-6 col-md-6  ">
           <img class="sec-img" src="dist/images/sec-2.gif" alt="">
+          
         </div>
       </div>
     </section>
     <section class="section our-message-sec">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6">
-          <img class="sec-img" src="dist/images/sec-three.gif" alt="">
+          <img class="sec-img" src="dist/images/sec-three.gif" alt=""> 
         </div>
         <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-end">
           <h3>رسالتنا</h3>
@@ -130,41 +131,19 @@
           </div>
         </div>
         <div class="redirect-sec">
-          <a href=""><img src="dist/images/down-arrow.png" alt="Arrow To Down"></a>
+          <a href="#switch-sections"><img src="dist/images/down-arrow.png" alt="Arrow To Down"></a>
           <button class="colored-btn">انتقال للاسفل</button>
         </div>
-        <!-- <div class="switch-sections-parent">
-            <ul class="switcher">
-              <li  data-cat=".gif">تصاميم GIF</li>
-              <li data-cat=".info">تصاميم انفوجرافيك</li>
-              <li class="active" data-cat=".graphic">تصاميم جرافيك</li>
-              <li data-cat=".motion">موشن جرافيك</li>
-              <li data-cat=".logo">شعار وهوية</li>
-            </ul>
-            <div class="gallery">
-              <img class="gif" src="https://via.placeholder.com/150" alt="" />
-              <img class="gif" src="https://via.placeholder.com/150" alt="" />
-              <img class="info" src="https://via.placeholder.com/150" alt="" />
-              <img class="info" src="https://via.placeholder.com/150" alt="" />
-              <img class="marketing" src="https://via.placeholder.com/150" alt="" />
-              <img class="gif" src="https://via.placeholder.com/150" alt="" />
-              <img class="info" src="https://via.placeholder.com/150" alt="" />
-              <img class="graphic" src="https://via.placeholder.com/150" alt="" />
-              <img class="graphic" src="https://via.placeholder.com/150" alt="" />
-              <img class="motion" src="https://via.placeholder.com/150" alt="" />
-              <p>معرض الأعمال</p>
-            </div>
-        </div> -->
-        <div class="switch-sections-parent " >
+        <div class="switch-sections-parent" id="switch-sections">
           <ul class="nav nav-pills mb-3 switcher" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="gif-link" data-bs-toggle="pill" data-bs-target="#gif-content" type="button" role="tab" aria-controls="gif-content" aria-selected="true">تصاميم GIF</button>
+              <button class="nav-link " id="gif-link" data-bs-toggle="pill" data-bs-target="#gif-content" type="button" role="tab" aria-controls="gif-content" aria-selected="true">تصاميم GIF</button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="infographic-link" data-bs-toggle="pill" data-bs-target="#infographic-content" type="button" role="tab" aria-controls="infographic-content" aria-selected="false">تصاميم انفوجرافيك</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="graphic-designs-link" data-bs-toggle="pill" data-bs-target="#graphic-designs-content" type="button" role="tab" aria-controls="graphic-designs-content" aria-selected="false">تصاميم جرافيك</button>
+              <button class="nav-link active" id="graphic-designs-link" data-bs-toggle="pill" data-bs-target="#graphic-designs-content" type="button" role="tab" aria-controls="graphic-designs-content" aria-selected="false">تصاميم جرافيك</button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="motion-graphic-link" data-bs-toggle="pill" data-bs-target="#motion-graphic-content" type="button" role="tab" aria-controls="motion-graphic-content" aria-selected="false">موشن جرافيك</button>
@@ -174,8 +153,7 @@
             </li>
           </ul>
         </div>
-     
-        <div class="tab-content gallery d-flex justify-content-center" id="pills-tabContent">
+        <div class="tab-content gallery d-flex justify-content-center" id="services-container">
           <div class="tab-pane fade show active" id="gif-content" role="tabpanel" aria-labelledby="pills-home-tab"> <img class="gif" src="https://via.placeholder.com/150" alt="" />
             <img class="gif" src="https://via.placeholder.com/150" alt="" />
             <img class="info" src="https://via.placeholder.com/150" alt="" />
@@ -200,8 +178,8 @@
     <section class="section our-qoutes-sec">
       <h2 class="text-right">الباقات</h2>
       <div class="row qoutes-container">
-        <div class="card" style="width: 18rem;">
-          <div class="overlay d-flex justify-content-center"><h3>التفاصيل</h3></div>
+        <div class="card">
+          <div class="overlay d-flex justify-content-center"><a href=""><h3>التفاصيل</h3></a></div>
           <div class="text-center card-header">
             <h3>على كيفك</h3>
           </div>
@@ -217,11 +195,11 @@
               <li> نعمل على إيصال فكرتك </li>
               <li> نعمل على إيصال فكرتك </li>          
               </ul>
-            <a href="#" class="btn">حسب الطلب</a>
+            <h3 class="qoutes-card-flag">حسب الطلب</h3>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <div class="overlay d-flex justify-content-center"><h3>التفاصيل</h3></div>
+        <div class="card">
+          <div class="overlay d-flex justify-content-center"><a href=""><h3>التفاصيل</h3></a></div>
           <div class="text-center card-header">
             <h3>لا يوقف</h3>
           </div>
@@ -236,11 +214,11 @@
               <li> نعمل على إيصال فكرتك </li>
               <li> نعمل على إيصال فكرتك </li>
               <li> نعمل على إيصال فكرتك </li>            </ul>
-            <a href="#" class="btn">2000 SR</a>
+            <h3 class="qoutes-card-flag">2000 SR</h3>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <div class="overlay d-flex justify-content-center"><h3>التفاصيل</h3></div>
+        <div class="card">
+          <div class="overlay d-flex justify-content-center"><a href=""><h3>التفاصيل</h3></a></div>
           <div class="text-center card-header">
             <h3>الدبره</h3>
           </div>
@@ -255,11 +233,11 @@
               <li> نعمل على إيصال فكرتك </li>
               <li> نعمل على إيصال فكرتك </li>
               <li> نعمل على إيصال فكرتك </li>            </ul>
-            <a href="#" class="btn">3000 SR</a>
+            <h3 class="qoutes-card-flag">3000 SR</h3>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <div class="overlay d-flex justify-content-center"><h3>التفاصيل</h3></div>
+      <div class="card">
+          <div class="overlay d-flex justify-content-center"><a href=""><h3>التفاصيل</h3></a></div>
           <div class="text-center card-header">
             <h3>على كيفك</h3>
           </div>
@@ -275,19 +253,20 @@
               <li> نعمل على إيصال فكرتك </li>
               <li> نعمل على إيصال فكرتك </li>
             </ul>
-            <a href="#" class="btn">5000 SR</a>
+            <h3 class="qoutes-card-flag">5000 SR</h3>
           </div>
         </div>
+        
       </div>
     </section>
     <section class="section who-us-sec">
       <div class="row justify-content-around align-items-center">
-        <div class="col-4">
-          <img class="w-100" src="dist/images/who-us-img-1.png" alt="">
-          <img class="w-100" src="dist/images/who-us-img-2.png" alt="">
-          <img class="w-100" src="dist/images/who-us-img-3.png" alt="">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+          <img class="w-75" src="dist/images/who-us-img-3.png" alt="">
+          <img class="w-75" src="dist/images/who-us-img-2.png" alt="">
+          <img class="w-75" src="dist/images/who-us-img-1.png" alt="">
         </div>
-        <div class="col-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
           <h2>قالوا عنا!</h2>
         </div>
       </div>
@@ -350,9 +329,17 @@
         <img class="footer-img" src="dist/images/footer.png" alt="Design Lab Logo">
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-    <script src="dist/js/custom.js"></script>
+    <script>
+      function PageOffsetToTop(){
+              window.scroll({
+              top: 900,
+              // left: 100,
+              behavior: 'smooth'
+            });
+      }
+    </script>
 </body>
 </html>
