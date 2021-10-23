@@ -13,11 +13,20 @@
 </head>
 <body>
     <section class="hero-section px-5">
-      <div class="clip-path"></div>
+      <!-- <div class="clip-path"></div> -->
       <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#"><img class="nav-img" src="dist/images/logo-with-white-bg.png" alt="Design Lab Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span> القائمة
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <div class="button d-flex justify-content-center align-items-center" id="btn">
+            <div>
+              <div class="bar top"></div>
+              <div class="bar middle"></div>
+              <div class="bar bottom"></div>
+            </div>
+            <span>القائمة
+            </span>
+          </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -331,15 +340,30 @@
 
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- <script src="dist/js/bootstrap.js"></script> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
     <script>
-      function PageOffsetToTop(){
-              window.scroll({
-              top: 900,
-              // left: 100,
-              behavior: 'smooth'
-            });
-      }
+$(document).ready(function() {
+
+function toggleSidebar() {
+  $(".button").toggleClass("active");
+  $("main").toggleClass("move-to-left");
+  $(".sidebar-item").toggleClass("active");
+}
+
+$(".button").on("click tap", function() {
+  toggleSidebar();
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) {
+    toggleSidebar();
+  }
+});
+
+});
     </script>
 </body>
 </html>

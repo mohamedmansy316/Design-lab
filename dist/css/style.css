@@ -76,7 +76,6 @@ nav .navbar-nav li {
 
 .hero-section {
   position: relative;
-  height: 633px !important;
 }
 .hero-section .row {
   margin-top: 6rem;
@@ -107,9 +106,6 @@ nav .navbar-nav li {
   clip-path: circle(90.5% at 81% -56%);
 }
 
-.our-design-lab-sec {
-  margin-top: 255px !important;
-}
 .our-design-lab-sec p {
   color: #59113C;
 }
@@ -359,7 +355,7 @@ nav .navbar-nav li {
   width: 28px;
 }
 .our-qoutes-sec .card .card-body {
-  height: 190px;
+  height: 189px;
   direction: rtl;
   text-align: right;
   background-color: antiquewhite;
@@ -379,7 +375,7 @@ nav .navbar-nav li {
   margin: 0;
   text-align: center;
   font-size: 29px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
 .who-us-sec h2 {
@@ -518,6 +514,80 @@ nav .navbar-nav li {
   .our-services-sec .cover-img {
     top: -255px;
   }
+}
+.bar {
+  display: block;
+  height: 4px;
+  width: 25px;
+  background-color: #EF8354;
+  margin: 5px auto;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.nav-right {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+}
+
+.nav-right.visible-xs {
+  z-index: 3;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.bar {
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.nav-right.visible-xs .active .bar {
+  background-color: #FFF;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.button.active .top {
+  -webkit-transform: translateY(12px) rotateZ(45deg);
+  -moz-transform: translateY(12px) rotateZ(45deg);
+  -ms-transform: translateY(12px) rotateZ(45deg);
+  -o-transform: translateY(12px) rotateZ(45deg);
+  transform: translateY(12px) rotateZ(45deg);
+}
+
+.button.active .bottom {
+  -webkit-transform: translateY(-6px) rotateZ(-45deg);
+  -moz-transform: translateY(-6px) rotateZ(-45deg);
+  -ms-transform: translateY(-6px) rotateZ(-45deg);
+  -o-transform: translateY(-6px) rotateZ(-45deg);
+  transform: translateY(-6px) rotateZ(-45deg);
+}
+
+.button.active .middle {
+  width: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

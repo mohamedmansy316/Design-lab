@@ -52,7 +52,7 @@ nav {
 
 .hero-section{
   position: relative;
-  height: 633px !important;
+  // height: 633px !important;
   .row{
     margin-top: 6rem;
   }
@@ -86,7 +86,7 @@ nav {
 
 }
 .our-design-lab-sec{
-  margin-top: 255px !important;
+  // margin-top: 255px !important;
   p{
     color: $sec-color;
   }
@@ -341,7 +341,7 @@ nav {
       width: 28px;
     }
     .card-body{
-      height: 190px;
+      height: 189px;
       direction: rtl;
       text-align: right;
       background-color: antiquewhite;
@@ -360,7 +360,7 @@ nav {
         margin: 0;
         text-align: center;
         font-size: 29px;
-        padding-bottom: 5px;
+        padding-bottom: 8px;
       }
     }
   }
@@ -521,4 +521,83 @@ nav {
       top: -255px;
     }
   } 
+}
+
+
+
+
+
+.bar {
+  display: block;
+  height: 4px;
+  width: 25px;
+  background-color: #EF8354;
+  margin: 5px auto;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-right {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+}
+
+.nav-right.visible-xs {
+  z-index: 3;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.bar {
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-right.visible-xs .active .bar {
+  background-color: #FFF;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.button.active .top {
+  -webkit-transform: translateY(12px) rotateZ(45deg);
+  -moz-transform:translateY(12px) rotateZ(45deg);
+  -ms-transform:translateY(12px) rotateZ(45deg);
+  -o-transform:translateY(12px) rotateZ(45deg);
+  transform:translateY(12px) rotateZ(45deg);
+}
+
+.button.active .bottom {
+  -webkit-transform: translateY(-6px) rotateZ(-45deg);
+  -moz-transform: translateY(-6px) rotateZ(-45deg);
+  -ms-transform: translateY(-6px) rotateZ(-45deg);
+  -o-transform: translateY(-6px) rotateZ(-45deg);
+  transform: translateY(-6px) rotateZ(-45deg);
+}
+
+.button.active .middle {
+  width: 0;
 }
